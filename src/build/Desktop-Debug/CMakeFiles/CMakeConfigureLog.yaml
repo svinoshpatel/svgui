@@ -1,0 +1,174 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.6.85 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++ 
+      Build flags: -DQT_QML_DEBUG
+      Id flags:  
+      
+      The output was:
+      1
+      /nix/store/v63bxfiacw082c7ijshf60alvvrpfxsq-binutils-2.44/bin/ld: cannot find crt1.o: No such file or directory
+      /nix/store/v63bxfiacw082c7ijshf60alvvrpfxsq-binutils-2.44/bin/ld: cannot find crti.o: No such file or directory
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++ 
+      Build flags: -DQT_QML_DEBUG
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-BZtOZo"
+      binary: "/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-BZtOZo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-BZtOZo'
+        
+        Run Build Command(s): /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E env VERBOSE=1 /nix/store/kv10h4pidkmx8cjs2sw2pi9rlcnighbc-gnumake-4.4.1/bin/make -f Makefile cmTC_631e0/fast
+        /nix/store/kv10h4pidkmx8cjs2sw2pi9rlcnighbc-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_631e0.dir/build.make CMakeFiles/cmTC_631e0.dir/build
+        make[1]: Entering directory '/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-BZtOZo'
+        Building CXX object CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o
+        /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++   -DQT_QML_DEBUG    -v -o CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-14-20241116/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14-20241116 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.40-66-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14-20241116/include/c++/14-20241116/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.1 20241116 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_631e0.dir/'
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D QT_QML_DEBUG /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_631e0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/nix-shell.rg2Y4W/cctFvpWs.s
+        GNU C++17 (GCC) version 14.2.1 20241116 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 14.2.1 20241116, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.20-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../x86_64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/include/c++/14-20241116/
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/include/c++/14-20241116//x86_64-unknown-linux-gnu
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/include/c++/14-20241116//backward
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/include
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed
+         /nix/store/71xyq87gpb2qrwn314p0sf2n002lgd91-glibc-2.40-66-dev/include
+        End of search list.
+        Compiler executable checksum: 05d1c2c35714ddc5c516e37c8e31d33e
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_631e0.dir/'
+         as -v --64 -o CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o /tmp/nix-shell.rg2Y4W/cctFvpWs.s
+        GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_631e0
+        /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_631e0.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++
+        COLLECT_LTO_WRAPPER=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-14-20241116/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14-20241116 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.40-66-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14-20241116/include/c++/14-20241116/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.1 20241116 (GCC) 
+        COMPILER_PATH=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/:/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_631e0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_631e0.'
+         /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2 -plugin /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell.rg2Y4W/ccDwwwCH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/rmy663w9p7xb202rcln4jjzmvivznmz8-glibc-2.40-66/lib64/ld-linux-x86-64.so.2 -o cmTC_631e0 crt1.o crti.o /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbegin.o -L/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtend.o crtn.o
+        collect2 version 14.2.1 20241116
+        /nix/store/0fsnicvfpf55nkza12cjnad0w84d6ba7-gcc-wrapper-14.2.1.20250322/bin/ld -plugin /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/libexec/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell.rg2Y4W/ccDwwwCH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/rmy663w9p7xb202rcln4jjzmvivznmz8-glibc-2.40-66/lib64/ld-linux-x86-64.so.2 -o cmTC_631e0 crt1.o crti.o /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbegin.o -L/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtend.o crtn.o
+        GNU ld (GNU Binutils) 2.44
+        /nix/store/v63bxfiacw082c7ijshf60alvvrpfxsq-binutils-2.44/bin/ld: cannot find crt1.o: No such file or directory
+        /nix/store/v63bxfiacw082c7ijshf60alvvrpfxsq-binutils-2.44/bin/ld: cannot find crti.o: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++ -DQT_QML_DEBUG   -v -Wl,-v CMakeFiles/cmTC_631e0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_631e0
+        make[1]: *** [CMakeFiles/cmTC_631e0.dir/build.make:102: cmTC_631e0] Error 1
+        make[1]: Leaving directory '/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-BZtOZo'
+        make: *** [Makefile:134: cmTC_631e0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++"
+    directories:
+      source: "/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-gwbAvs"
+      binary: "/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-gwbAvs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-gwbAvs'
+        
+        Run Build Command(s): /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E env VERBOSE=1 /nix/store/kv10h4pidkmx8cjs2sw2pi9rlcnighbc-gnumake-4.4.1/bin/make -f Makefile cmTC_300ce/fast
+        /nix/store/kv10h4pidkmx8cjs2sw2pi9rlcnighbc-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_300ce.dir/build.make CMakeFiles/cmTC_300ce.dir/build
+        make[1]: Entering directory '/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-gwbAvs'
+        Building CXX object CMakeFiles/cmTC_300ce.dir/testCXXCompiler.cxx.o
+        /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++   -DQT_QML_DEBUG  -o CMakeFiles/cmTC_300ce.dir/testCXXCompiler.cxx.o -c /home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-gwbAvs/testCXXCompiler.cxx
+        Linking CXX executable cmTC_300ce
+        /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_300ce.dir/link.txt --verbose=1
+        /nix/store/v63bxfiacw082c7ijshf60alvvrpfxsq-binutils-2.44/bin/ld: cannot find crt1.o: No such file or directory
+        /nix/store/v63bxfiacw082c7ijshf60alvvrpfxsq-binutils-2.44/bin/ld: cannot find crti.o: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /nix/store/2agih0y5ns3sgbviw2xhivdgg59b41g9-gcc-14-20241116/bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_300ce.dir/testCXXCompiler.cxx.o -o cmTC_300ce
+        make[1]: *** [CMakeFiles/cmTC_300ce.dir/build.make:102: cmTC_300ce] Error 1
+        make[1]: Leaving directory '/home/svinoshpatel/git/svgui/src/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-gwbAvs'
+        make: *** [Makefile:134: cmTC_300ce/fast] Error 2
+        
+      exitCode: 2
+...
